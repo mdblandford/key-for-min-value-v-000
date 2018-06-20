@@ -15,6 +15,6 @@
 
 def key_for_min_value(hash)
   return nil if hash.empty?
-  arr = hash.collect { |key, value| value }.sort
-  hash.each { |key, value| return key if value == arr[0] }
+  arr = hash.collect {|key, value| value}.sort
+  hash.each {|key, value| return key if value == arr[0]}
 end
